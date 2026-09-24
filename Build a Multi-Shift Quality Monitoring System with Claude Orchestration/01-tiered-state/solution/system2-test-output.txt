@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.0, pytest-8.4.2, pluggy-1.6.0 -- /opt/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/Build a Multi-Shift Quality Monitoring System with Claude Orchestration/01-tiered-state/solution
+configfile: pyproject.toml
+plugins: anyio-4.14.1
+collecting ... collected 9 items
+
+tests/test_us01_tiered_state.py::test_hotstate_roundtrip_and_size_budget PASSED [ 11%]
+tests/test_us01_tiered_state.py::test_hotstate_rejects_more_than_20_hashes PASSED [ 22%]
+tests/test_us01_tiered_state.py::test_hotstate_atomic_write PASSED       [ 33%]
+tests/test_us01_tiered_state.py::test_warmstore_creates_table_and_index PASSED [ 44%]
+tests/test_us01_tiered_state.py::test_warmstore_insert_many_roundtrips PASSED [ 55%]
+tests/test_us01_tiered_state.py::test_coldstore_writes_monthly_summary PASSED [ 66%]
+tests/test_us01_tiered_state.py::test_coldstore_handles_empty_month PASSED [ 77%]
+tests/test_us01_tiered_state.py::test_defects_since_uses_index_and_does_not_load_full_table PASSED [ 88%]
+tests/test_us01_tiered_state.py::test_defects_since_respects_limit PASSED [100%]
+
+============================== 9 passed in 0.39s ===============================
