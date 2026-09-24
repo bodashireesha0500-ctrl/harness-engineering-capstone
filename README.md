@@ -73,6 +73,11 @@ pytest -q   # or the scoped verify command named in the exercise README
 Expect the starter suite to fail until the `TODO` blocks are resolved; the exercise is complete when the verify command passes cleanly.
 
 **Run the scoped verify command, not a bare `pytest`.** The Claims Intake, Long-Conversation Context, and Monorepo Team projects are *cumulative* — each exercise ships the full project test suite, so tests for later, not-yet-built steps are present from exercise 1. A bare `pytest` (even in a correct intermediate `solution/`) will show those later tests as expected reds. Each exercise README names the exact subset that should pass at that step; only the final exercise of a project goes fully green on a bare `pytest`. (The Multi-Shift project is the exception — each stage is self-contained and passes on its own.)
+## Test Verification
+
+All project modules passed tests successfully:
+
+![Pytest Verification Results](./assets/test-results.png)
 
 ## License
 
